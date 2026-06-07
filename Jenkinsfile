@@ -1,6 +1,7 @@
 node {
-    stage('Checkout') {
-        git branch: 'main', url: 'https://github.com/luyawen2002-bop/calculator-quality-check.git'
+    stage('Show Files') {
+        sh 'pwd'
+        sh 'ls -la'
     }
 
     stage('Run Tests') {
