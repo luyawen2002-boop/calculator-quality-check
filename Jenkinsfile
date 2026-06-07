@@ -1,6 +1,6 @@
 node {
     stage('Checkout') {
-        checkout scm
+        git branch: 'main', url: 'https://github.com/luyawen2002-bop/calculator-quality-check.git'
     }
 
     stage('Run Tests') {
